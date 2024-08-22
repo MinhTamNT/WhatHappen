@@ -17,18 +17,18 @@ export const Footer = () => {
           </p>
         </div>
         {/* Columns for other sections */}
-        <div className="flex flex-col md:flex-row gap-8 md:gap-36 w-full">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-28 w-full">
           <div className="flex flex-col w-full md:w-1/4">
             <span className="text-[14px] font-semibold leading-[2.86] text-[#111] mb-4">
               about us
             </span>
-            <p className="text-[14px]">회사 소개 인재 채용 상시 할인 혜택</p>
+            <p className="text-[14px] w-[82px]">회사 소개 인재 채용 상시 할인 혜택</p>
           </div>
           <div className="flex flex-col w-full md:w-1/4">
             <span className="text-[14px] font-semibold leading-[2.86] text-[#111] mb-4">
               my order
             </span>
-            <p className="text-[14px]">
+            <p className="text-[14px] w-[128px] h-[128px]">
               내 주문 주문 배송 취소 / 교환 / 반품 내역 상품 리뷰 내역 증빙 서류
               발급
             </p>

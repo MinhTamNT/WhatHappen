@@ -14,28 +14,28 @@ export const Header = () => {
 
   return (
     <>
-      <header className="relative w-full h-[80px] flex items-center justify-between p-4 sm:p-[24px_120px_27px_97px] bg-[#111] text-white">
+      <header className="relative w-full h-[80px] flex items-center justify-between p-4 sm:px-[120px] sm:py-[24px] bg-[#111] text-white">
         <img
           src={images.logoApp}
-          className="w-[150px] h-[20px] sm:w-[226px] sm:h-[26px] object-cover"
+          className=" h-[20px] w-[226px] md:h-[26px] object-cover"
           alt="App Logo"
         />
 
-        <div className="hidden sm:flex items-center space-x-4 sm:space-x-[44px]">
-          <div className="w-[100px] h-[11px] sm:w-[111px] sm:h-[11px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
+        <div className="hidden md:flex items-center space-x-4 sm:space-x-[44px]">
+          <div className="flex justify-center items-center h-[30px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
             Introduction
           </div>
-          <div className="w-[70px] h-[11px] sm:w-[73px] sm:h-[11px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
+          <div className="flex justify-center items-center h-[30px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
             Solution
           </div>
-          <div className="w-[75px] h-[11px] sm:w-[78px] sm:h-[11px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
+          <div className="flex justify-center items-center h-[30px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
             Rate Plan
           </div>
           <div className="w-[1px] h-[23px] bg-[#ccc8c6]"></div>
-          <div className="w-[40px] h-[11px] sm:w-[44px] sm:h-[11px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
+          <div className="flex justify-center items-center h-[30px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
             Login
           </div>
-          <div className="w-[130px] h-[11px] sm:w-[155px] sm:h-[11px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
+          <div className="flex justify-center items-center h-[30px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
             Apply for Free Use
           </div>
         </div>
@@ -60,8 +60,9 @@ export const Header = () => {
           </svg>
         </button>
       </header>
+
       <div
-        className={`absolute top-0 right-0 w-full h-screen bg-[#111] z-50 text-white flex flex-col items-center justify-center space-y-4 sm:hidden transform transition-transform duration-300 ${
+        className={`absolute top-0 right-0 w-full h-screen bg-[#111] z-50 text-white flex flex-col items-center justify-center space-y-4 sm:hidden transition-transform duration-300 ${
           isMenuOpen ? "translate-x-0" : "hidden"
         }`}
       >
