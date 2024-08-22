@@ -69,10 +69,7 @@ export const Login = () => {
             </div>
             <div className="flex justify-center space-x-4 mb-8">
               {SocialIcons.map(({ name, image }) => (
-                <button
-                  key={name}
-                  className="w-12 h-12 p-2 bg-gray-100 rounded-full hover:bg-gray-200"
-                >
+                <button key={name} className="w-12 h-12 p-2 ">
                   <img
                     src={image}
                     alt={name}
