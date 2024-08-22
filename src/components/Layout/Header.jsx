@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { images } from "../../assets/image";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -12,33 +14,46 @@ export const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const menuItems = [
+    { label: "Introduction", path: "/introduction" },
+    { label: "Solution", path: "/solution" },
+    { label: "Rate Plan", path: "/rate-plan" },
+    { label: "Login", path: "/login" },
+    { label: "Apply for Free Use", path: "/register" },
+  ];
+
   return (
     <>
       <header className="relative w-full h-[80px] flex items-center justify-between p-4 sm:px-[120px] sm:py-[24px] bg-[#111] text-white">
         <img
           src={images.logoApp}
-          className=" h-[20px] w-[226px] md:h-[26px] object-cover"
+          className="h-[20px] w-[226px] md:h-[26px] object-cover"
           alt="App Logo"
         />
 
-        <div className="hidden md:flex items-center space-x-4 sm:space-x-[44px]">
-          <div className="flex justify-center items-center h-[30px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
-            Introduction
-          </div>
-          <div className="flex justify-center items-center h-[30px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
-            Solution
-          </div>
-          <div className="flex justify-center items-center h-[30px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
-            Rate Plan
-          </div>
+        <nav className="hidden md:flex items-center space-x-4 sm:space-x-[44px]">
+          {menuItems.slice(0, 3).map((item) => (
+            <div
+              key={item.label}
+              className="flex items-center h-[30px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[2.14] font-normal cursor-pointer"
+            >
+              {item.label}
+            </div>
+          ))}
           <div className="w-[1px] h-[23px] bg-[#ccc8c6]"></div>
-          <div className="flex justify-center items-center h-[30px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
+          <div
+            className="flex items-center h-[30px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[2.14] font-normal cursor-pointer"
+            onClick={() => navigate("/login")}
+          >
             Login
           </div>
-          <div className="flex justify-center items-center h-[30px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[1.5] sm:leading-[2.14] font-normal">
+          <div
+            className="flex items-center h-[30px] uppercase text-center text-[#fff] text-[12px] sm:text-[14px] leading-[2.14] font-normal cursor-pointer"
+            onClick={() => navigate("/register")}
+          >
             Apply for Free Use
           </div>
-        </div>
+        </nav>
 
         <button
           className="sm:hidden flex items-center text-white focus:outline-none"
@@ -72,25 +87,16 @@ export const Header = () => {
         >
           &times;
         </button>
-        <a
-          href="#introduction"
-          className="text-xl"
-          onClick={handleMenuItemClick}
-        >
-          Introduction
-        </a>
-        <a href="#solution" className="text-xl" onClick={handleMenuItemClick}>
-          Solution
-        </a>
-        <a href="#rate-plan" className="text-xl" onClick={handleMenuItemClick}>
-          Rate Plan
-        </a>
-        <a href="#login" className="text-xl" onClick={handleMenuItemClick}>
-          Login
-        </a>
-        <a href="#apply" className="text-xl" onClick={handleMenuItemClick}>
-          Apply for Free Use
-        </a>
+        {menuItems.map((item) => (
+          <Link
+            key={item.label}
+            to={item.path}
+            className="text-xl"
+            onClick={handleMenuItemClick}
+          >
+            {item.label}
+          </Link>
+        ))}
       </div>
     </>
   );
