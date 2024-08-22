@@ -65,7 +65,7 @@ export const Footer = () => {
             ({ name, image }) => (
               <button
                 key={name}
-                className="w-12 h-12 p-2 bg-gray-100  flex items-center justify-center"
+                className="w-12 h-12 p-2   flex items-center justify-center"
               >
                 <img
                   src={image}
