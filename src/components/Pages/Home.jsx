@@ -3,6 +3,7 @@ import { images } from "../../assets/image";
 import { bestProduct } from "../../lib";
 import { ListProduct } from "../ListProduct/ListProduct";
 import { BrandStory } from "../BrandStory/BrandStory";
+import { Issue } from "../Issue/Issue";
 
 export const Home = () => {
   return (
@@ -85,6 +86,7 @@ export const Home = () => {
       </div>
       <ListProduct />
       <BrandStory />
+      <Issue />
     </>
   );
 };

@@ -35,6 +35,25 @@ import Img23 from "./img-23.png";
 import Img24 from "./img-24.png";
 import Img25 from "./img-25.png";
 import HeartIcon from "./hearticon.png";
+
+import Object2 from "./object-02.png";
+import Object1 from "./object-01.png";
+import Object4 from "./object-04.png";
+import Object5 from "./object-05.png";
+import Object6 from "./object-06.png";
+import Object7 from "./object-07.png";
+import Object3 from "./object-03.png";
+import Window from "./window.png";
+import NewImages from "./news-img-01.png";
+
+import CustomImage from "./custom.png";
+import NewObject4 from "./news-object-04.png";
+import NewObject3 from "./news-img-03.png";
+import NewImage4 from "./news-img-04.png";
+import NewImage5 from "./news-img-05.png";
+import NewObject5 from "./news-object-05.png";
+import NewObject3Imag3 from "./news-object-03.png";
+
 ///Social Icon
 
 import GoogleIcon from "./google-icon.png";
@@ -90,4 +109,23 @@ export const SocialIcon = {
   FacebookIcon: FacebookIcon,
   KakaoIcon: KakaoIcon,
   NaverIcon: NaverIcon,
+};
+
+export const ObjectPicture = {
+  Object2: Object2,
+  Object1: Object1,
+  Object4: Object4,
+  Object5: Object5,
+  Object6: Object6,
+  Object7: Object7,
+  Object3: Object3,
+  Window: Window,
+  NewImages: NewImages,
+  CustomImage: CustomImage,
+  NewObject4: NewObject4,
+  NewObject3: NewObject3,
+  NewImage4: NewImage4,
+  NewImage5: NewImage5,
+  NewObject3Imag3: NewObject3Imag3,
+  NewObject5: NewObject5,
 };
