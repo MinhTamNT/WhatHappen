@@ -172,8 +172,9 @@ export const listProduct = [
 ];
 
 export const SocialIcons = [
-  { name: "Google", image: SocialIcon.googleIcon },
-  { name: "Facebook", image: SocialIcon.FacebookIcon },
-  { name: "Kakao", image: SocialIcon.KakaoIcon },
   { name: "Naver", image: SocialIcon.NaverIcon },
+  { name: "Kakao", image: SocialIcon.KakaoIcon },
+  { name: "Facebook", image: SocialIcon.FacebookIcon },
+  { name: "Ins", image: SocialIcon. Instgram},
+  { name: "Google", image: SocialIcon.googleIcon },
 ];

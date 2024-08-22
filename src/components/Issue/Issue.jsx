@@ -1,10 +1,10 @@
 import React from "react";
-import { ObjectPicture } from "../../assets/image";
+import { ObjectPicture, videObject } from "../../assets/image";
 
 export const Issue = () => {
   return (
-    <div className="h-auto min-h-[1143px] bg-[#fccb05] flex flex-col">
-      <div className="max-w-6xl w-full px-4 mx-auto mt-10 md:mt-20">
+    <div className="h-auto relative min-h-[1143px] bg-[#fccb05] flex flex-col">
+      <div className="max-w-6xl  w-full px-4 mx-auto mt-10 md:mt-20">
         <div className="text-center">
           <h1 className="text-[24px] sm:text-[30px] md:text-[40px] font-bold uppercase mb-4 sm:mb-6">
             Happened’s Issue
@@ -72,6 +72,10 @@ export const Issue = () => {
             )}
           </div>
         ))}
+      </div>
+      <div className="absolute top-4 right-5">
+        <img src={videObject.NewObject3Imag32} className="md:w-20 md:h-20 h-10 w-10" />
+        <img src={videObject.NewObject3Imag33} className="mt-2 md:w-20 md:h-20 h-10 w-10" />
       </div>
     </div>
   );

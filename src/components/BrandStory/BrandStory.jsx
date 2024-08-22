@@ -27,12 +27,12 @@ export const BrandStory = () => {
         <img
           src={ObjectPicture.Object5}
           alt="Object 5"
-          className="object-contain absolute top-[80px] right-[-70px] z-10 w-[100px] md:w-[150px] lg:w-[200px] mb-2"
+          className="object-contain absolute top-[20px] right-[-70px] z-10 h-[223px]  w-[350px] mb-2"
         />
         <img
           src={ObjectPicture.Object4}
           alt="Object 4"
-          className="object-contain absolute z-0 top-[-150px] right-[-10%] md:w-[120px] lg:w-[180px]"
+          className="object-contain absolute z-0 top-[-200px]   right-[-120px] md:w-[197px] lg:w-[197px]"
         />
       </div>
       <div className="absolute bottom-3/4 top-[75%] left-4 md:left-0 flex items-center space-x-4">
@@ -62,9 +62,9 @@ export const BrandStory = () => {
           <img
             src={ObjectPicture.Window}
             alt="Window"
-            className="object-contain z-50 mx-auto h-[250px] md:h-[300px] lg:h-[400px] max-w-full"
+            className="object-contain z-50 mx-auto h-[250px] md:h-[418px] lg:h-[418px] max-w-full"
           />
-          <div className="absolute top-[40%] md:top-[50%] left-[67%] transform -translate-x-1/2 -translate-y-1/2 max-w-xs lg:max-w-md">
+          <div className="absolute top-[40%] md:top-[50%] left-[63%] transform -translate-x-1/2 -translate-y-1/2 max-w-xs lg:max-w-md">
             <h2 className="md:text-lg text-left lg:text-2xl font-semibold text-gray-800">
               What Happened’s Brand story
             </h2>
@@ -76,7 +76,7 @@ export const BrandStory = () => {
               칼이다. 쓸쓸한 희망의 못할 것은 목숨을 수 그들을 아름답고 고행을
               끝에 설산에서 황금시대를 이상을 운다.
             </p>
-            <button className="flex justify-center items-center w-full md:h-[50px] mt-4 uppercase text-[16px] md:text-[18px] p-2 border-[3px] text-center font-semibold bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+            <button className="flex justify-center items-center  md:h-[60px] mt-4 uppercase text-[16px] md:text-[18px] p-2 border-[3px] text-center  w-[200px] border-[#333] font-extrabold">
               See More
             </button>
           </div>

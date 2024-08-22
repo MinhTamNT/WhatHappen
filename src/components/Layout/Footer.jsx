@@ -16,13 +16,14 @@ export const Footer = () => {
             이하 버전 지원 중단 안내 [공지] 개인 정보 처리 방침 변경 사전 안내
           </p>
         </div>
-        {/* Columns for other sections */}
         <div className="flex flex-col md:flex-row gap-8 md:gap-28 w-full">
           <div className="flex flex-col w-full md:w-1/4">
             <span className="text-[14px] font-semibold leading-[2.86] text-[#111] mb-4">
               about us
             </span>
-            <p className="text-[14px] w-[82px]">회사 소개 인재 채용 상시 할인 혜택</p>
+            <p className="text-[14px] w-[82px]">
+              회사 소개 인재 채용 상시 할인 혜택
+            </p>
           </div>
           <div className="flex flex-col w-full md:w-1/4">
             <span className="text-[14px] font-semibold leading-[2.86] text-[#111] mb-4">
@@ -52,7 +53,6 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      {/* Footer bottom section */}
       <div className="flex flex-col md:flex-row items-center justify-between mt-20">
         <p className="text-[#a9a9a9] text-[14px] text-center md:text-left w-full md:w-1/2 mb-4 md:mb-0">
           © 2020-2021 what happened corp l (주) 왓헤픈 ｜ 대표자 : 홍길동 ｜
@@ -61,18 +61,20 @@ export const Footer = () => {
           이용약관 l 개인정보처리방침
         </p>
         <div className="flex justify-center space-x-4 mb-8 md:mb-0">
-          {SocialIcons.slice(1).map(({ name, image }) => (
-            <button
-              key={name}
-              className="w-12 h-12 p-2 bg-gray-100 rounded-full hover:bg-gray-200 flex items-center justify-center"
-            >
-              <img
-                src={image}
-                alt={name}
-                className="w-full h-full object-contain"
-              />
-            </button>
-          ))}
+          {[SocialIcons[0], SocialIcons[2], SocialIcons[3]].map(
+            ({ name, image }) => (
+              <button
+                key={name}
+                className="w-12 h-12 p-2 bg-gray-100 rounded-full hover:bg-gray-200 flex items-center justify-center"
+              >
+                <img
+                  src={image}
+                  alt={name}
+                  className="w-full h-full object-contain"
+                />
+              </button>
+            )
+          )}
         </div>
       </div>
     </footer>

@@ -4,6 +4,7 @@ import { bestProduct } from "../../lib";
 import { ListProduct } from "../ListProduct/ListProduct";
 import { BrandStory } from "../BrandStory/BrandStory";
 import { Issue } from "../Issue/Issue";
+import { Happen } from "../Happen/Happen";
 
 export const Home = () => {
   return (
@@ -87,6 +88,7 @@ export const Home = () => {
       <ListProduct />
       <BrandStory />
       <Issue />
+      <Happen />
     </>
   );
 };

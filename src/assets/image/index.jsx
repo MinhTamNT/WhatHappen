@@ -53,6 +53,8 @@ import NewImage4 from "./news-img-04.png";
 import NewImage5 from "./news-img-05.png";
 import NewObject5 from "./news-object-05.png";
 import NewObject3Imag3 from "./news-object-03.png";
+import NewObject3Imag32 from "./news-object-03-2.png";
+import NewObject3Imag33 from "./news-object-02.png";
 
 ///Social Icon
 
@@ -60,6 +62,19 @@ import GoogleIcon from "./google-icon.png";
 import NaverIcon from "./naver-icon.png";
 import KakaoIcon from "./kakao-icon.png";
 import FacebookIcon from "./facebook-icon.png";
+import Instgram from "./snsicon-03.png";
+
+//Video Oject
+
+import VideoObject6 from "./video-object-06.png";
+import VideoObject1 from "./video-object-01.png";
+import VideoObject3 from "./video-object-03.png";
+import VideoObject7 from "./video-object-07.png";
+import VideoObject8 from "./video-object-08.png";
+import VideoObject9 from "./video-object-09.png";
+import VideoObject4 from "./video-object-04.png";
+import VideoObject2 from "./video-object-02.png";
+import Video from "./video.png";
 
 export const images = {
   logoApp: LogoApp,
@@ -109,6 +124,7 @@ export const SocialIcon = {
   FacebookIcon: FacebookIcon,
   KakaoIcon: KakaoIcon,
   NaverIcon: NaverIcon,
+  Instgram: Instgram,
 };
 
 export const ObjectPicture = {
@@ -128,4 +144,18 @@ export const ObjectPicture = {
   NewImage5: NewImage5,
   NewObject3Imag3: NewObject3Imag3,
   NewObject5: NewObject5,
+};
+
+export const videObject = {
+  VideoObject6: VideoObject6,
+  VideoObject7: VideoObject7,
+  Video: Video,
+  VideoObject3: VideoObject3,
+  VideoObject1: VideoObject1,
+  VideoObject8: VideoObject8,
+  VideoObject9: VideoObject9,
+  VideoObject4: VideoObject4,
+  VideoObject2: VideoObject2,
+  NewObject3Imag32: NewObject3Imag32,
+  NewObject3Imag33: NewObject3Imag33,
 };
